@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------
+# Project-specific
+# ---------------------------------------------------------------
+
+# Order data: real files may contain customer details, so keep them out of git.
+# (The current files are made-up samples. Delete these lines if you want to share them.)
+data/train/
+data/predict/
+data/*.csv
+data/*.json
+data/*.xlsx
+
+# Trained models: regenerate with `python src/xgboost_model.py train`
+models/
+*.pkl
+*.joblib
+
+# Generated results: training metrics and predictions
+outputs/
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Notebooks, tests and tooling caches
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------
+# Secrets and local config (API keys for weather, couriers, etc.)
+# ---------------------------------------------------------------
+.env
+.env.*
+*.key
+secrets.*
+
+# ---------------------------------------------------------------
+# Logs and temporary files
+# ---------------------------------------------------------------
+*.log
+*.tmp
+*.bak
+
+# ---------------------------------------------------------------
+# Editors and OS
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+Desktop.ini
+.DS_Store
+~$*
